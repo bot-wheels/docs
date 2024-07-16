@@ -7,7 +7,7 @@
 ### Wisit our website
 
 We're hosting our documentation online, here is the link:
-[documetation](TO BE ADDED)
+[documetation](https://bot-wheels.github.io/docs)
 
 ### Docker
 
