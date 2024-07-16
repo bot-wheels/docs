@@ -1,0 +1,9 @@
+site_name: Bot
+
+theme:
+  name: material 
+  favicon: assets/3d-car.png
+  logo: assets/3d-car.png
+
+nav:
+  - Wstęp: index.md
