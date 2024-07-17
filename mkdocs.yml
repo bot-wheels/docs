@@ -16,7 +16,23 @@ theme:
     toggle:
       icon: material/brightness-4
       name: Switch to light mode
+  
+    features:
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.footer
 
 nav:
   - Introduction: index.md
   - Poetry Usage Tutorial: poetry.md
+
+plugins:
+  - search
+  - social
+
+extra:
+  social:
+    - icon: simple/github 
+      link: https://github.com/bot-wheels
+
