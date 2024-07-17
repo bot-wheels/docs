@@ -1,4 +1,6 @@
-site_name: Bot
+site_name: Bot-Wheels
+repo_url: https://github.com/bot-wheels
+repo_name: squidfunk/bot-wheels
 
 theme:
   name: material 
