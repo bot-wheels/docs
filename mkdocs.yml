@@ -6,4 +6,5 @@ theme:
   logo: assets/3d-car.png
 
 nav:
-  - Wstęp: index.md
+  - Introduction: index.md
+  - Poetry Usage Tutorial: poetry.md
