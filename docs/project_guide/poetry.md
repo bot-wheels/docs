@@ -63,12 +63,9 @@ poetry search flask
 ```
 
 This command will list all packages related to "flask" available on PyPI.
-
 ## Summary
-
 - **Install dependencies:** `poetry install`
 - **Activate virtual environment:** `poetry shell`
 - **Add a package:** `poetry add <package-name>`
 - **Search for packages:** `poetry search <query>`
-
 By following these steps, you can efficiently manage your project's dependencies and environment using Poetry. For more detailed information, you can refer to the [official Poetry documentation](https://python-poetry.org/docs/).
