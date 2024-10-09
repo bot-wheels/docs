@@ -20,4 +20,4 @@ jobs:
 
       - name: Run markdownlint
         run: |
-          markdownlint '**/*.md'
+          markdownlint '**/*.md' -c markdownlint.json
