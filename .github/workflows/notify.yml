@@ -1,0 +1,55 @@
+name: notify
+on:
+  pull_request:
+    branches:
+      - main
+    types: [opened, review_requested, closed]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      
+      - name: Send notification for opening MR
+        if: ${{ github.event.action == 'opened' }}
+        uses: appleboy/discord-action@master
+        with:
+          webhook_id: ${{ secrets.DISCORD_WEBHOOK_ID }}
+          webhook_token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
+          color: "#48f442"
+          username: "Github Bot"
+          message: |
+            A new merge request has been opened on the **main** branch!
+            **Title:** ${{ github.event.pull_request.title }}
+            **By:** ${{ github.actor }}
+            **Link:** ${{ github.event.pull_request.html_url }}
+
+      - name: Send notification for MR approval
+        if: ${{ github.event.action == 'review_requested' }}
+        uses: appleboy/discord-action@master
+        with:
+          webhook_id: ${{ secrets.DISCORD_WEBHOOK_ID }}
+          webhook_token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
+          color: "#48f442"
+          username: "Github Bot"
+          message: |
+            A merge request has been approved on the **main** branch!
+            **Title:** ${{ github.event.pull_request.title }}
+            **Reviewed by:** ${{ github.actor }}
+            **Link:** ${{ github.event.pull_request.html_url }}
+
+      - name: Send notification for merging MR
+        if: ${{ github.event.action == 'closed' && github.event.pull_request.merged == true }}
+        uses: appleboy/discord-action@master
+        with:
+          webhook_id: ${{ secrets.DISCORD_WEBHOOK_ID }}
+          webhook_token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
+          color: "#48f442"
+          username: "Github Bot"
+          message: |
+            A merge request has been merged on the **main** branch!
+            **Title:** ${{ github.event.pull_request.title }}
+            **Merged by:** ${{ github.actor }}
+            **Link:** ${{ github.event.pull_request.html_url }}
