@@ -1,6 +1,7 @@
 # Rocket League AI Agent Setup
 
-## Objective:
+## Objective
+
 Set up the environment necessary for integrating an AI agent with Rocket League. We will walk through installing the game, relevant mods, and setting up the development environment.
 
 ---
@@ -15,20 +16,24 @@ Before we begin setting up the environment, ensure that you have the following:
 - **RLGym plugin for Bakkesmod:** Essential for interfacing with the game. If you install RLGym via pip, this will be installed automatically.
 - **Python:** Version between 3.7 and 3.9 is required (version 3.10 is not supported). We recommend using the stable version 3.8.19.
 
-### Detailed Steps:
+### Detailed Steps
 
 #### 1.1 Install Rocket League
+
 - Install Rocket League from either **Steam** or **Epic Games Store**. This will serve as the base game that the AI agent will interact with.
 
 #### 1.2 Install Bakkesmod
+
 - **Bakkesmod** is a tool that enables external modding capabilities, including Python script integration with Rocket League. It’s a critical mod for controlling aspects of the game programmatically.
 - Download and install Bakkesmod from the official [Bakkesmod website](https://bakkesmod.com/).
   
 #### 1.3 Install RLGym Plugin
+
 - **RLGym** is a framework that allows you to develop and train AI agents for Rocket League. It interacts with Bakkesmod and provides a streamlined interface for AI development.
 - If you are installing RLGym via pip, the necessary plugin for Bakkesmod will be installed automatically. Otherwise, you can manually install the plugin from the RLGym GitHub repository.
 
 #### 1.4 Install Python
+
 - Download and install Python, ensuring you have a version between 3.7 and 3.9. The recommended version for this setup is **Python 3.8.19**.
 - You can download Python from the official [Python website](https://www.python.org/downloads/release/python-3819/).
 - During installation, ensure that you check the box **"Add Python to PATH"** for ease of use in command-line operations.
@@ -38,27 +43,34 @@ Before we begin setting up the environment, ensure that you have the following:
 Once the installation is complete, follow these steps to launch the game and configure Bakkesmod:
 
 ### 2.1 Launch Rocket League
+
 - Open the **Epic Games Launcher** and launch **Rocket League** from your library.
   
 ### 2.2 Configure Bakkesmod
+
 - After launching Rocket League, open **Bakkesmod** by pressing the default hotkey **F2**.
 - Navigate to the **"Python Scripts"** tab. This is where you will manage Python script integration with the game.
   
 ### 2.3 Plugin Configuration
+
 - Once in the Bakkesmod window, go to the **"Plugins"** section.
 - Open the **Plugin Manager** and search for the **Rocket League Gym** plugin.
 - Check the box next to **Rocket League Gym** to enable the plugin.
 
 At this stage, you should have Rocket League and Bakkesmod running, with the necessary plugins configured. The game is now ready for interaction with AI scripts.
+
 ## 3. Setting up the Python Environment
 
 To ensure smooth interaction between Python and Rocket League, we recommend using a virtual environment like **Conda**. This will help manage dependencies and prevent conflicts with other projects.
 
 ### 3.1 Install Python 3.8.19
+
 - First, download and install **Python 3.8.19** from the official [Python website](https://www.python.org/downloads/release/python-3819/). This is the most stable version for our setup.
 
 ### 3.2 Create a Virtual Environment using Conda
+
 - If you have **Conda** installed, create a new virtual environment by running the following commands in your terminal:
+
   ```bash
   conda create --name rocketleague_env python=3.8.19
   conda activate rocketleague_env
@@ -66,19 +78,23 @@ To ensure smooth interaction between Python and Rocket League, we recommend usin
 This will create and activate a new virtual environment with Python 3.8.19.
 
 ### 3.3 Install Required Packages
+
 - Once the environment is activated, install the necessary packages by running the following commands:
 
   1. Install **pywin32** version 228, which is required for certain Windows-specific operations:
+
      ```bash
      pip install pywin32==228
      ```
 
   2. Install **RLGym**, the key package that interfaces with Rocket League:
+
      ```bash
      pip install rlgym
      ```
 
 With these steps completed, your Python environment is fully configured and ready for development with Rocket League.
+
 ## 4. Example Code for Agent Interaction
 
 In this section, we'll walk through the basic structure of a Python bot for Rocket League. The setup consists of two main files:
@@ -89,7 +105,7 @@ In this section, we'll walk through the basic structure of a Python bot for Rock
 ### 4.1 `main.py`
 
 Here is the content of the `main.py` file, which initializes the agent and provides an option to train or run it:
-    
+
   ```python
     from Agent import SimpleAgent
     
@@ -102,6 +118,7 @@ Here is the content of the `main.py` file, which initializes the agent and provi
         elif mode == "run":
             agent.run_infinite()
   ```
+
 ### 4.2 `Agent.py`
 
 The `SimpleAgent` class is responsible for creating and managing the agent. It includes methods for training, loading models, and running the agent in the Rocket League environment. Below is the key implementation of the agent class:
@@ -168,6 +185,7 @@ class SimpleAgent:
         while True:
             self.run(episodes=1)
 ```
+
 ### 4.3 Detailed Explanation of the Code
 
 1. **`make_env()`**:
@@ -213,4 +231,3 @@ class SimpleAgent:
    - This method continuously runs the agent without stopping. It calls `run(episodes=1)` in an infinite loop:
      - **Infinite loop**: The agent keeps running one episode at a time in an infinite loop. This is useful for long-term testing or for scenarios where the agent needs to run indefinitely.
      - **Real-time interaction**: If `real_time=True`, the agent’s actions will be synced with 60 FPS, simulating real-time gameplay as closely as possible.
-
