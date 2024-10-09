@@ -26,8 +26,13 @@ theme:
     - navigation.footer
 
 nav:
-  - Introduction: index.md
-  - Poetry Usage Tutorial: poetry.md
+  - Project Guide:
+    - Working With Project: project_guide/working_with_project.md
+    - Poetry Usage Tutorial: project_guide/poetry.md
+  - Research:
+    - Interface Overlay Research: research/interface_overlay_reaserch.md
+    - Playing in Online Games: research/playing_in_online_games.md
+    - Rocket League Bot Setup: research/rocket-league-bot-setup.md
 
 plugins:
   - search

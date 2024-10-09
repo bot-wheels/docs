@@ -20,6 +20,7 @@ The RLBot renderer provides the following functions that can be used to display 
 These functions can be used to create a custom overlay within the Rocket League game environment, displaying various information such as the bot's status, game scores, and other relevant data.
 
 ### Links
+
 - [RLBot rendering Wiki](https://github.com/RLBot/RLBot/wiki/Rendering)
 - [Python bot rendering example lines 59-62](https://github.com/RLBot/RLBotPythonExample/blob/master/src/bot.py)
 
