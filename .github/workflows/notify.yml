@@ -27,7 +27,7 @@ jobs:
             **Link:** ${{ github.event.pull_request.html_url }}
 
       - name: Send notification for MR approval
-        if: ${{ github.event.action == 'review_requested' }}
+        if: ${{ github.event.action == 'submitted' && github.event.review.state == 'approved' }}
         uses: appleboy/discord-action@master
         with:
           webhook_id: ${{ secrets.DISCORD_WEBHOOK_ID }}
