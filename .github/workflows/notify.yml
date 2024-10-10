@@ -26,20 +26,6 @@ jobs:
             **By:** ${{ github.actor }}
             **Link:** ${{ github.event.pull_request.html_url }}
 
-      - name: Send notification for MR approval
-        if: ${{ github.event.action == 'submitted' && github.event.review.state == 'approved' }}
-        uses: appleboy/discord-action@master
-        with:
-          webhook_id: ${{ secrets.DISCORD_WEBHOOK_ID }}
-          webhook_token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
-          color: "#48f442"
-          username: "Github Bot"
-          message: |
-            A merge request has been approved on the **main** branch!
-            **Title:** ${{ github.event.pull_request.title }}
-            **Reviewed by:** ${{ github.actor }}
-            **Link:** ${{ github.event.pull_request.html_url }}
-
       - name: Send notification for merging MR
         if: ${{ github.event.action == 'closed' && github.event.pull_request.merged == true }}
         uses: appleboy/discord-action@master
