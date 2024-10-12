@@ -1,63 +1,52 @@
-##Research and Documentation of Algorithm Categories for Rocket League Bot##
+# Research and Documentation of Algorithm Categories for Rocket League Bot
 
-# ##Q-Learning \- Anna Ivanytska##
+## Q-Learning - Anna Ivanytska
 
-##Materials:##   
-[Q-Learning Algorithm: From Explanation to Implementation | by Amrani Amine | Towards Data Science](https://towardsdatascience.com/q-learning-algorithm-from-explanation-to-implementation-cdbeda2ea187)  
-[An Introduction to Q-Learning: A Tutorial For Beginners | DataCamp](https://www.datacamp.com/tutorial/introduction-q-learning-beginner-tutorial)  
-[Reinforcement Learning Explained Visually (Part 4): Q Learning, step-by-step | by Ketan Doshi | Towards Data Science](https://towardsdatascience.com/reinforcement-learning-explained-visually-part-4-q-learning-step-by-step-b65efb731d3e)
+### Materials:
+- [Q-Learning Algorithm: From Explanation to Implementation | by Amrani Amine | Towards Data Science](https://towardsdatascience.com/q-learning-algorithm-from-explanation-to-implementation-cdbeda2ea187)  
+- [An Introduction to Q-Learning: A Tutorial For Beginners | DataCamp](https://www.datacamp.com/tutorial/introduction-q-learning-beginner-tutorial)  
+- [Reinforcement Learning Explained Visually (Part 4): Q Learning, step-by-step | by Ketan Doshi | Towards Data Science](https://towardsdatascience.com/reinforcement-learning-explained-visually-part-4-q-learning-step-by-step-b65efb731d3e)
 
-##What is Q-learning?##
+### What is Q-learning?
+Q-learning is a model-free, value-based, off-policy algorithm that finds the best series of actions based on the agent's current state. The “Q” stands for quality, representing how valuable an action is in maximizing future rewards.
 
-Q-learning is a model-free, value-based, off-policy algorithm that will find the best series of actions based on the agent's current state. The “Q” stands for quality. Quality represents how valuable the action is in maximizing future rewards.  
+### Examples of uses:
+None found.
 
-##Examples of uses:##
+### Why does it have limited popularity in developing bots for Rocket League?
+1. **High Dimensionality and Complexity**: Rocket League is a fast-paced game with a complex environment, involving variables such as player positions, ball trajectory, and physics interactions. This vast state space makes it difficult for Q-learning algorithms to converge to optimal policies, as they require substantial data to learn effectively.
+2. **Inconsistent Human Behavior**: Human players display a wide range of strategies and behaviors, which complicates learning. Since no single optimal action exists in many scenarios, Q-learning struggles to generalize from diverse actions, leading to inconsistent learning outcomes.
+3. **Compounding Errors**: A single incorrect action can lead to unfamiliar states, making learning more difficult. This issue is magnified in Rocket League, where quick decision-making is crucial.
+4. **Resource Intensity**: Developing a competent Q-learning bot requires significant computational resources and time due to the need for numerous simulations.
 
-Not founded.
+### Conclusion:
+Due to these challenges, Rocket League bot developers prefer more advanced machine learning techniques, such as deep reinforcement learning or imitation learning, which can handle the game's complexity more effectively.
 
-##Why does it has limited popularity in developing bots for Rocket League?##
+---
 
-1. High Dimensionality and Complexity: Rocket League is a fast-paced game with a complex environment. The state space is vast, including variables such as player positions, ball trajectory, and physics interactions. This complexity makes it difficult for Q-learning algorithms to converge to optimal policies, as they require substantial amounts of data to effectively learn from such a high-dimensional space.  
-2. Inconsistent Human Behavior: Human players exhibit a wide range of strategies and behaviors, which complicates the learning process. Since there is no single optimal action in many situations, Q-learning struggles to generalize from the diverse actions taken by players, leading to inconsistent learning outcomes.  
-3. Compounding Errors: In Q-learning, a single incorrect action can lead to a state that the model has not encountered before, complicating the learning process. This issue is exacerbated in a dynamic game like Rocket League, where quick decision-making is critical.  
-4. Resource Intensity: Developing a competent Q-learning bot requires significant computational resources and time. The training process involves running numerous simulations, which can be resource-intensive. This might deter developers from pursuing Q-learning in favor of simpler or more established methods.
+## Policy Optimization - Igor Malkovskiy
 
-##Conclusion:##
+### Materials:
+- [Policy Gradient Algorithms Explained by Arthur Juliani | Towards Data Science](https://towardsdatascience.com/an-intuitive-explanation-of-policy-gradient-part-1-reinforce-aa4392cbfd3c)  
+- [Parts 2: Kinds of RL Algorithms](https://spinningup.openai.com/en/latest/spinningup/rl_intro2.html)  
+- [Part 3: Intro to Policy Optimization](https://spinningup.openai.com/en/latest/spinningup/rl_intro3.html)  
+- [Proximal Policy Optimization](https://huggingface.co/blog/deep-rl-ppo)
 
-Given these challenges, developers of Rocket League bots tend to prefer more advanced machine learning techniques that can handle the game's complexity more effectively, such as deep reinforcement learning or imitation learning.
+### What is Policy Optimization?
+Policy Optimization is a reinforcement learning method that improves the agent’s behavior policy by directly optimizing its parameters. Unlike value-based methods like Q-learning, which optimize the value function, Policy Optimization focuses on continuous improvement of the policy itself.
 
-###Police Optimization###
+### Examples of uses:
+- [Building a reinforcement learning agent that can play Rocket League](https://sohum-padhye.medium.com/building-a-reinforcement-learning-agent-that-can-play-rocket-league-5df59c69b1f5)
 
-# ##Police Optimization \- Igor Malkovskiy##
+### Why Policy Optimization Isn't Popular for Developing Bots in Rocket League:
+1. **High Computational Complexity**: Policy optimization algorithms, such as Proximal Policy Optimization (PPO) and Trust Region Policy Optimization (TRPO), require significant computational resources. Rocket League’s complex physical interactions make training and optimizing policies resource-intensive, as numerous simulations are necessary.
+2. **Sensitivity to Hyperparameters**: Policy optimization algorithms are highly sensitive to hyperparameters like learning rate and regularization coefficients. Incorrect tuning can lead to unstable or non-functional learning, complicating the application in complex environments like Rocket League.
+3. **Generalization Problems**: Rocket League presents a wide range of fast-changing scenarios. Policy optimization algorithms often struggle to generalize in such situations, particularly when continuous control is required.
+4. **Complexity of Reward Shaping**: Effective reward design is crucial in policy optimization, and in Rocket League, rewards are challenging to formulate due to the combination of short-term goals (e.g., hitting the ball) and long-term strategies (e.g., ball possession and positioning).
 
-##Materials:##   
-[##Policy Gradient Algorithms Explained by Arthur Juliani | Towards Data Science##](https://towardsdatascience.com/an-intuitive-explanation-of-policy-gradient-part-1-reinforce-aa4392cbfd3c)  
-[##Parts 2:Kinds of RL Algorithms##](https://spinningup.openai.com/en/latest/spinningup/rl_intro2.html)  
-[##Part 3:Intro to Police optimization##](https://spinningup.openai.com/en/latest/spinningup/rl_intro3.html)  
-[##Proximal Police Optimization##](https://huggingface.co/blog/deep-rl-ppo)
+### Why Policy Optimization Could Be Useful for Developing Bots in Rocket League:
+1. **Effectiveness in Continuous Action Spaces**: Policy optimization excels in environments with continuous action spaces, making it potentially suitable for games like Rocket League that require precise control over the car and the ball.
+2. **Resilience to Noise and Stochastic Scenarios**: Policy optimization handles noise and stochastic scenarios better than value-based methods. This is particularly advantageous in Rocket League, where the game's dynamics can change rapidly due to unexpected ball movements or opponent strategies.
 
-##What is Police Optimization?##
-
-Policy Optimization is a method in reinforcement learning that focuses on improving the policy directly by optimizing its parameters. Unlike value-based methods like Q-Learning, which optimize the value function, Policy Optimization aims to improve the agent’s behavior policy continuously. You can find exactly how Police Optimization works in the links above.
-
-##Examples of uses:##  
-[##Building-a-reinforcement-learning-agent-that-can-play-rocket-league##](https://sohum-padhye.medium.com/building-a-reinforcement-learning-agent-that-can-play-rocket-league-5df59c69b1f5)
-
-### ##Why Policy Optimization is/Isn't Popular for Developing Bots in Rocket League:##
-
-#### ##Why Policy Optimization Isn't Popular for Developing Bots in Rocket League:##
-
-1. ##High Computational Complexity##: Policy optimization algorithms like Proximal Policy Optimization (PPO) and Trust Region Policy Optimization (TRPO) require significant computational resources. Rocket League is a fast-paced game with highly complex physical interactions, making the process of training and optimizing policies extremely resource-intensive. To train bots effectively, a vast number of simulations are required, which becomes a barrier for many developers.  
-2. ##Sensitivity to Hyperparameters##: Policy optimization algorithms are very sensitive to hyperparameter tuning (e.g., learning rate, regularization coefficients, etc.). Incorrectly chosen parameters can lead to unstable or non-functional learning, making their application in complex game scenarios like Rocket League more difficult, as these algorithms require precise tuning for each specific state.  
-3. ##Generalization Problems##: Rocket League is a game with a wide range of scenarios where strategies can change rapidly. Policy optimization algorithms often struggle to generalize in fast-changing game states, especially in complex situations requiring continuous control. This makes them less suitable for games with high variability, where rapid adaptation is necessary.  
-4. ##Complexity of Reward Shaping##: Policy optimization requires careful design of the reward function to help the agent learn the correct actions in the long term. In Rocket League, rewards can be difficult to formulate because the game combines many short-term goals (e.g., hitting the ball, blocking an opponent) with long-term strategies (e.g., overall ball possession, positioning), making the reward function design a challenging task.
-
-#### ##Why Policy Optimization Could Be Useful for Developing Bots in Rocket League:##
-
-1. ##Effectiveness in Continuous Action Spaces##: Unlike Q-Learning, which is better suited for discrete actions, Policy Optimization works well with continuous action spaces, making it potentially suitable for complex game environments like Rocket League, where fine-tuned control over the car and the ball is required.  
-2. ##Resilience to Noise and Stochastic Scenarios##: Policy optimization algorithms handle noise and stochastic scenarios better than value-based approaches. In Rocket League, many factors can change rapidly (e.g., unexpected ball hits, sudden opponent strategies), and Policy Optimization could help bots respond more flexibly to such changes.
-
-### ##Conclusion:##
-
-While Policy Optimization may theoretically offer advantages in games with continuous action spaces like Rocket League, in practice, its use is limited due to computational complexity, generalization challenges, and the difficulty of hyperparameter tuning. As a result, developers often prefer simpler and less resource-intensive approaches, such as Deep Q-Learning or hybrid algorithms.
-
+### Conclusion:
+Although Policy Optimization offers theoretical advantages in environments with continuous action spaces like Rocket League, its use is limited in practice due to high computational demands, generalization challenges, and sensitivity to hyperparameters. Developers often prefer simpler and less resource-intensive approaches, such as Deep Q-Learning or hybrid algorithms.
