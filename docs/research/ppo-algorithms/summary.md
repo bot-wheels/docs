@@ -1,39 +1,39 @@
-# Proximal Policy Optimization (PPO) - Podsumowanie
+# Proximal Policy Optimization (PPO) - Summary
 
-Proximal Policy Optimization (PPO) to popularny i efektywny algorytm uczenia ze wzmocnieniem (ang. reinforcement learning, RL), wprowadzony przez OpenAI jako ulepszenie starszych metod gradientu polityki, takich jak Trust Region Policy Optimization (TRPO). PPO znajduje równowagę między wydajnością a efektywnością obliczeniową, co czyni go odpowiednim wyborem do szerokiego zakresu zadań RL.
+Proximal Policy Optimization (PPO) is a popular and efficient reinforcement learning (RL) algorithm introduced by OpenAI as an improvement over older policy gradient methods like Trust Region Policy Optimization (TRPO). PPO finds a balance between performance and computational efficiency, making it a suitable choice for a wide range of RL tasks.
 
-## 1. Podstawy teoretyczne
+## 1. Theoretical Background
 
-PPO należy do rodziny algorytmów gradientu polityki, które uczą się bezpośrednio polityki (funkcji decyzyjnej) agenta. W PPO kluczowym celem jest optymalizacja funkcji nagrody przy jednoczesnym utrzymaniu stabilności treningu i unikania dużych zmian w polityce, co mogłoby prowadzić do niestabilności. 
+PPO belongs to the family of policy gradient algorithms, which learn the agent's policy (decision function) directly. The key objective in PPO is to optimize the reward function while maintaining training stability and preventing large updates to the policy, which could lead to instability.
 
-Aby to osiągnąć, PPO wprowadza ograniczenie na to, jak bardzo polityka może się zmieniać między aktualizacjami. Wykorzystuje tzw. *klipowane* funkcje celu, aby zapobiec zbyt dużym zmianom polityki w jednym kroku aktualizacji. Dzięki temu PPO jest prostsze i bardziej wydajne w implementacji w porównaniu do innych algorytmów, takich jak TRPO, które wymagają bardziej skomplikowanych obliczeń.
+To achieve this, PPO introduces a constraint on how much the policy can change between updates. It uses a *clipped* objective function to prevent significant shifts in policy in a single update step. This approach makes PPO simpler and more computationally efficient compared to other algorithms like TRPO, which require more complex computations.
 
-## 2. Mechanizmy PPO
+## 2. PPO Mechanisms
 
-PPO działa poprzez:
+PPO operates through:
 
-- **Użycie funkcji celu (objective function)**: PPO maksymalizuje funkcję nagrody przy jednoczesnym zastosowaniu ograniczenia (*clip*) na stosunek prawdopodobieństw między starą a nową polityką, aby uniknąć dużych, destrukcyjnych zmian.
-- **Wykorzystanie wielu kroków aktualizacji**: PPO wykorzystuje mini-batche próbek do efektywnego obliczania aktualizacji gradientu, co pozwala na bardziej stabilne i efektywne uczenie.
-- **Stosowanie *Advantage Estimation***: PPO często korzysta z GAE (Generalized Advantage Estimation), co pozwala na bardziej precyzyjne i stabilne szacowanie korzyści, które agent osiąga w danej sytuacji.
+- **Objective Function**: PPO maximizes the reward function while applying a *clip* constraint on the ratio of probabilities between the old and new policy to avoid large, destructive updates.
+- **Multiple Update Steps**: PPO uses mini-batches of samples for efficient gradient updates, allowing for more stable and effective learning.
+- **Advantage Estimation**: PPO often uses Generalized Advantage Estimation (GAE) to accurately and stably estimate the advantage that the agent gains in a given situation.
 
-## 3. Dlaczego PPO?
+## 3. Why PPO?
 
-PPO zostało wybrane ze względu na jego zalety:
+PPO was chosen for the following reasons:
 
-- **Stabilność treningu**: PPO ogranicza zmiany w polityce, co zmniejsza ryzyko niestabilności, często obserwowane w innych metodach gradientu polityki.
-- **Prostota implementacji**: PPO, w przeciwieństwie do TRPO, jest prostsze do implementacji, co przekłada się na łatwiejszą integrację i optymalizację w projekcie.
-- **Efektywność obliczeniowa**: Algorytm ten nie wymaga kosztownych obliczeń, jak np. obliczanie hessianu (drugiej pochodnej), co sprawia, że jest wydajny i szybki.
+- **Training Stability**: PPO restricts policy changes, reducing the risk of instability often seen in other policy gradient methods.
+- **Simplicity of Implementation**: Unlike TRPO, PPO is simpler to implement, making it easier to integrate and optimize within the project.
+- **Computational Efficiency**: The algorithm does not require costly computations, such as calculating the Hessian (second derivative), making it efficient and fast.
 
-## 4. Dalsza lektura
+## 4. Further Reading
 
-Aby zgłębić szczegóły teoretyczne i implementacyjne PPO, polecamy następujące źródła:
+For more detailed theoretical and practical insights into PPO, we recommend the following resources:
 
 - [OpenAI Baselines: PPO](https://openai.com/blog/openai-baselines-ppo/)
-- Schulman et al., "Proximal Policy Optimization Algorithms" (2017) - [Link do publikacji](https://arxiv.org/abs/1707.06347)
-- Sutton & Barto, "Reinforcement Learning: An Introduction" (2018) - Podstawowy podręcznik dotyczący teorii uczenia ze wzmocnieniem.
+- Schulman et al., "Proximal Policy Optimization Algorithms" (2017) - [Link to paper](https://arxiv.org/abs/1707.06347)
+- Sutton & Barto, "Reinforcement Learning: An Introduction" (2018) - A foundational textbook on reinforcement learning theory.
 
-Warto obejrzeć/przeczytać:
--https://openai.com/index/openai-baselines-ppo/
--https://www.youtube.com/watch?v=5P7I-xPq8u8
+Recommend to read/watch
+- [OpenAI Baselines: PPO Overview](https://openai.com/index/openai-baselines-ppo/)
+- [YouTube - Introduction to PPO](https://www.youtube.com/watch?v=5P7I-xPq8u8)
 
-PPO to algorytm, który znajduje szerokie zastosowanie w wielu projektach RL, dzięki czemu jest idealnym wyborem do naszych celów, zapewniając stabilność, wydajność i łatwość implementacji.
+PPO is a versatile algorithm widely used across various RL projects, making it an ideal choice for our purposes, ensuring stability, efficiency, and ease of implementation.
