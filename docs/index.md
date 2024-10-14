@@ -1,7 +1,6 @@
 # Welcome to Bot Wheels Documentation
 
-
-### What is Bot Wheels?
+## What is Bot Wheels?
 
 Rocket League bot
 
@@ -18,13 +17,11 @@ Rocket League bot
 * BoT Project Biweekly Report
   * [Week 1-2](https://bot-wheels.github.io/docs/biweekly_reports/biweekly_report_1/ "Week 1-2")
 
-###  Project's purpose
-
+### Project's purpose
 
 ### Main features
 
-
 ## [Bot-Wheels Github](https://github.com/bot-wheels "Repository link")
+
 * [bot-wheels-core](bot-wheels-core "https://github.com/bot-wheels/bot-wheels-core")
 * [docs](docs "https://github.com/bot-wheels/docs")
-
