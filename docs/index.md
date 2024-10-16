@@ -1,14 +1,13 @@
 # Welcome to Bot Wheels Documentation
 
-<p align="center">
-<img src="https://github.com/user-attachments/assets/11034144-0611-4147-adcb-e9afd43e02e1" alt="Bot Wheels" width="50%" height="auto"/>
-</p>
+![Bot Wheels](https://github.com/user-attachments/assets/11034144-0611-4147-adcb-e9afd43e02e1)
 
 ## Project's purpose
 
 The goal of the project is to create a bot for the game Rocket League, which will compete at an assumed average player level.
+
 * The bot will use the PPO (Proximal Policy Optimization) algorithm for learning, with a possible switch to alternatively DQN or A3C.
-* The main goal is to achieve >50% wins in 20 matches against Silver level players(locally or if possible in online play)/Bot Psyonix Rookie(if successful Psyonix Allstar).
+* The main goal is to achieve >50% wins in 20 matches against Silver level players (locally or if possible in online play)/Bot Psyonix Rookie (if successful Psyonix Allstar).
 * The bot will be optimized to run at 30 FPS on hardware with i9-14900HX and RTX 4080.
 * Create visualization of the bot's states.
 
@@ -47,14 +46,15 @@ The goal of the project is to create a bot for the game Rocket League, which wil
 * [docs](docs "https://github.com/bot-wheels/docs")
 
 ## Team
-- Ivanytska Anna
-- Jakub Cisoń
-- Kacper Drozdowski
-- Konrad Siemiątkowski
-- Dawid Mielewczyk
-- Mateusz Gościniecki
-- Max Nadir
-- Michał Pryba
-- Michał Zarzycki
-- Igor Malkovsky
-- Wojtek Szamocki
+
+* Ivanytska Anna
+* Jakub Cisoń
+* Kacper Drozdowski
+* Konrad Siemiątkowski
+* Dawid Mielewczyk
+* Mateusz Gościniecki
+* Max Nadir
+* Michał Pryba
+* Michał Zarzycki
+* Igor Malkovsky
+* Wojtek Szamocki
