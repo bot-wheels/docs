@@ -17,9 +17,9 @@ The goal of the project is to create a bot for the game Rocket League, which wil
 
 | Week       | Scope of Work                                                                                     |
 |------------|---------------------------------------------------------------------------------------------------|
-| Week 1     | - Setting up a repository on GitHub; Environment configuration (Python, TensorFlow, RLGym)         |                    
-|            | - Analysis of Rocket League game mechanics                                                         |                         
-| Week 2     | - Defining key tasks for the bot                                                                  |                      
+| Week 1     | - Setting up a repository on GitHub; Environment configuration (Python, TensorFlow, RLGym)         |
+|            | - Analysis of Rocket League game mechanics                                                         |
+| Week 2     | - Defining key tasks for the bot                                                                  |
 |            | - Initial implementation of the PPO algorithm                                                     |
 | Week 3     | - Implementation of basic bot functions (movement, ball interaction)                              |
 |            | - Introducing simple game logs (console logs)                                                     |
