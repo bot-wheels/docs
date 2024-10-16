@@ -15,30 +15,30 @@ The goal of the project is to create a bot for the game Rocket League, which wil
 
 ## Work plan
 
-| Week       | Scope of Work                                                                                     | Percentage Contribution |
-|------------|---------------------------------------------------------------------------------------------------|-------------------------|
-| Week 1     |- Setting up a repository on GitHub; Environment configuration (Python, TensorFlow, RLGym)         | 5%                      |
-|            |- Analysis of Rocket League game mechanics                                                         |                         |
-| Week 2     | - Defining key tasks for the bot                                                                   | 10%                     |
-|            | - Initial implementation of the PPO algorithm                                                      |                         |
-| Week 3     | - Implementation of basic bot functions (movement, ball interaction)                               | 12%                     |
-|            | - Introducing simple game logs (console logs)                                                      |                         |
-| **Milestone 1**| - Progress report on project assumptions and preliminary results                                   | 5%                      |
-| Week 4     | - Implementing the PPO algorithm – agent training                                                  | 15%                     |
-|            | - Testing different approaches (e.g. different rewards, parameters)                                |                         |
-| Week 5     | - PPO training and optimization (testing in more games)                                            | 15%                     |
-|            | - Results analysis                                                                                 |                         |
-| Week 6     | - Further PPO optimization                                                                         | 10%                     |
-|            | - Analyzing bot efficiency in different game scenarios (e.g. 1v1 local, bots)                      |                         |
-| **Milestone 2**| - Report on PPO test results                                                                       | 5%                      |
-|            | - Bot performance evaluation                                                                       |                         |
-| Week 7     | - Fine-tuning the bot (adjusting strategy, changing parameters in the algorithm)                   | 10%                     |
-| Week 8     | - Implementation of a system for visualizing bot states and actions, along with fine-tuning        | 12%                     |
-| Week 9     | - Bug fixes and tests against various opponents                                                    | 8%                      |
-|            | - Introducing logs to monitor bot actions                                                          |                         |
-| Week 10    | - Final fixes                                                                                      | 10%                     |
-|            | - Project documentation; preparation of the final report and presentation                          |                         |
-| **Deadline**   | - Final bot presentation and report                                                                | 5%                      |
+| Week       | Scope of Work                                                                                     |
+|------------|---------------------------------------------------------------------------------------------------|
+| Week 1     |- Setting up a repository on GitHub; Environment configuration (Python, TensorFlow, RLGym)         |                    
+|            |- Analysis of Rocket League game mechanics                                                         |                         
+| Week 2     | - Defining key tasks for the bot                                                                  |                      
+|            | - Initial implementation of the PPO algorithm                                                     |
+| Week 3     | - Implementation of basic bot functions (movement, ball interaction)                              |
+|            | - Introducing simple game logs (console logs)                                                     |
+| **Milestone 1**| - Progress report on project assumptions and preliminary results                              |
+| Week 4     | - Implementing the PPO algorithm – agent training                                                 |
+|            | - Testing different approaches (e.g. different rewards, parameters)                               |
+| Week 5     | - PPO training and optimization (testing in more games)                                           |
+|            | - Results analysis                                                                                |
+| Week 6     | - Further PPO optimization                                                                        |
+|            | - Analyzing bot efficiency in different game scenarios (e.g. 1v1 local, bots)                     |
+| **Milestone 2**| - Report on PPO test results                                                                  |
+|            | - Bot performance evaluation                                                                      |
+| Week 7     | - Fine-tuning the bot (adjusting strategy, changing parameters in the algorithm                   |
+| Week 8     | - Implementation of a system for visualizing bot states and actions, along with fine-tuning       |
+| Week 9     | - Bug fixes and tests against various opponents|
+|            | - Introducing logs to monitor bot actions|
+| Week 10    | - Final fixes  |
+|            | - Project documentation; preparation of the final report and presentation|
+| **Deadline**   | - Final bot presentation and report|
 
 ## [Bot-Wheels Github](https://github.com/bot-wheels "Repository link")
 
