@@ -1,6 +1,6 @@
 # Welcome to Bot Wheels Documentation
 
-![Bot Wheels](https://github.com/user-attachments/assets/11034144-0611-4147-adcb-e9afd43e02e1)
+![Bot Wheels](https://raw.githubusercontent.com/bot-wheels/docs/refs/heads/main/docs/assets/BoT.png)
 
 ## Project's purpose
 
