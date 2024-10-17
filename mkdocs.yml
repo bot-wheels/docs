@@ -27,16 +27,23 @@ theme:
 
 nav:
   - Project Guide:
-    - Working With Project: project_guide/working_with_project.md
-    - Poetry Usage Tutorial: project_guide/poetry.md
+    - Working With Project: project-guide/working-with-project.md
+    - Poetry Usage Tutorial: project-guide/poetry.md
   - Research:
-    - Interface Overlay Research: research/interface_overlay_reaserch.md
-    - Playing in Online Games: research/playing_in_online_games.md
+    - Interface Overlay Research: research/interface-overlay-research.md
+    - Playing in Online Games: research/playing-in-online-games.md
     - Rocket League Bot Setup: research/rocket-league-bot-setup.md
     - Algorithms:
       - A3C: research/rl-algorithms/A3C.md
+    - Implement Movement Testing Script for Bot Actions: research/implement-movement-testing-script-for-bot-actions.md
+    - Match Against AI Bots: research/match-against-ai-bots.md
+    - Research and Documentation of Algorithm Categories for Rocket League Bot: research/research-and-documentation-of-algorithm-categories-for-rocket-league-bot.md
+    - RL algorithms:
+      - A3C: research/rl-algorithms/A3C.md
+      - Model based algorithms for RL bots alphazero: research/rl-algorithms/model-based-algorithms-for-rocket-league-bots-alphazero.md
+      - Police Optimization Documentation from the summer: research/rl-algorithms/Police-Optimization-Documentation-from-the-summer.md
   - Biweekly Reports:
-      - Week 1-2: biweekly_reports/biweekly_report_1.md
+    - Week 1-2: biweekly-reports/weekly-report-1.md
 
 plugins:
   - search
