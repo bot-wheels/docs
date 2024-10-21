@@ -37,7 +37,6 @@ nav:
     - Match Against AI Bots: research/match-against-ai-bots.md
     - Research and Documentation of Algorithm Categories for Rocket League Bot: research/research-and-documentation-of-algorithm-categories-for-rocket-league-bot.md
     - RL algorithms:
-      - A2C: research/rl-algorithms/A2C.md
       - A3C: research/rl-algorithms/A3C.md
       - Model based algorithms for RL bots alphazero: research/rl-algorithms/model-based-algorithms-for-rocket-league-bots-alphazero.md
       - Police Optimization Documentation from the summer: research/rl-algorithms/Police-Optimization-Documentation-from-the-summer.md
