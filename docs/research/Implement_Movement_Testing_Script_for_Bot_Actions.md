@@ -1,3 +1,5 @@
+# Movement Testing Script
+
 Code implements a mock testing framework for a bot in the context of a Rocket League-style simulation. It tests various bot actions such as moving forward, using boost, turning, and stopping. Here is an overview of the key components:
 
 Key Imports
@@ -17,6 +19,7 @@ MovementTestBot Class
 This class simulates a bot that performs a series of tests on its movement capabilities.
 
 Attributes:
+
 - index, team, name: Basic information about the bot.
 - logger: An instance of MockLogger, used to log information during the tests.
 - controller_state: An instance of SimpleControllerState that controls the bot's movement commands (throttle, steer, boost).
