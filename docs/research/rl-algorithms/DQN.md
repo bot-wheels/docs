@@ -6,11 +6,15 @@ Q-learning is a basic reinforcement learning algorithm. It is model-free (meanin
 
 ![image1](../../assets/DQN/image1.png)
 
+*Image created by:Mike Wang*
+
 A major issue with Q-learning is that the Q-table method becomes impractical when there are too many states and actions to calculate. In such cases, the table can grow too large.
 
 The solution to this problem is Deep Q-learning (DQL), which is an extension of Q-learning that uses a neural network instead of a Q-table. The difference is that in Q-learning, the Q-table gives us simple values, but in DQL, the neural network outputs action-value pairs.
 
 ![image2](../../assets/DQN/image2.png)
+
+*Image created by:Sergios Karagiannakos*
 
 Deep Q-Network (DQN) refers to the neural network used in DQL to approximate Q-values. This helps in handling environments with large or continuous state spaces, making decision-making more efficient.
 
