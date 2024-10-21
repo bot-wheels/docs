@@ -33,8 +33,6 @@ nav:
     - Interface Overlay Research: research/interface-overlay-research.md
     - Playing in Online Games: research/playing-in-online-games.md
     - Rocket League Bot Setup: research/rocket-league-bot-setup.md
-    - Algorithms:
-      - A3C: research/rl-algorithms/A3C.md
     - Implement Movement Testing Script for Bot Actions: research/implement-movement-testing-script-for-bot-actions.md
     - Match Against AI Bots: research/match-against-ai-bots.md
     - Research and Documentation of Algorithm Categories for Rocket League Bot: research/research-and-documentation-of-algorithm-categories-for-rocket-league-bot.md
