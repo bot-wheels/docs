@@ -42,6 +42,7 @@ nav:
       - Police Optimization Documentation from the summer: research/rl-algorithms/Police-Optimization-Documentation-from-the-summer.md
   - Biweekly Reports:
     - Week 1-2: biweekly-reports/weekly-report-1.md
+    - Week 3-4: biweekly-reports/weekly-report-2.md
 
 plugins:
   - search

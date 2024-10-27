@@ -1,0 +1,43 @@
+# Biweekly Report for the Bot Project
+
+**Subject**: Initial Implementation of RL Algorithms and Addition of Fundamental Visualizations
+
+**Project Title**: BotWheels
+
+**Report Number**: 2
+
+**Date**: October 27, 2024
+
+**Week Range**: Weeks 3-4
+
+## 1. Progress Overview
+
+Significant progress has been made with the development of base PPO and A2C/A3C algorithms, which are already yielding training results. Extensive state visualizations have been implemented with further expansions possible. Weekly goals are largely being met, with some even ahead of schedule, supporting a favorable outlook for project completion. A team member has proposed Rocket Learn, a tool from the RLGym community that facilitates advanced bot training. This tool has been assigned for parallel development as a potential approach.
+
+## 2. Team Member Contributions, Marks, and Linked Issues
+
+| **Team Member**          | **Mark** | **Summary of Contributions**                                                                                                                                                                                                                                             | **Linked Issues**                                                                                                                                                                                              |
+|--------------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Jakub Cisoń**         | 4.5      | Organized team work, adapted tasks based on feedback from project members, conducted code reviews. Occasionally experienced minor delays in delivering new tasks. Maintained communication with the Rocket League bot community to improve project work.                 |                                                                                                                                                                                                                |
+| **Kacper Drozdowski**   | 3.5      | Conducted research on the A2C algorithm and implemented it for testing against a local player (delayed, scheduled for completion by 28.10.2024 with validation in the next report).                                                                                      | - [Research about A2C algorithm and how we can tranform that info A3C approche](https://github.com/bot-wheels/bot-wheels-core/issues/41) - [Implement A2C/A3C Training Against Human Players](https://github.com/bot-wheels/bot-wheels-core/issues/52)                                                                                                               |
+| **Mateusz Gościniecki** | 5        | Developed the main training loop for the PPO algorithm and assessed the feasibility of using Rocket Learn to achieve better results for bots. Ultimately responsible for the parallel implementation of the algorithm using Rocket Learn.                                | - [Rocket Learn: Creating a Basic Training Loop vs Bot](https://github.com/bot-wheels/bot-wheels-core/issues/56)                                                                                               |
+| **Anna Ivanytska**      | 3.5      | Delivered delayed research on the DQN algorithm and began implementing an event logger visualization.                                                                                                                                                                    | - [Create Event Log Window](https://github.com/bot-wheels/bot-wheels-core/issues/50) - [Documentation for the DQN Algorithm](https://github.com/bot-wheels/docs/issues/19)                                     |
+| **Igor Malkovskiy**     | 4        | Delivered the PPO algorithm against another agent and conducted relevant research. Some delays encountered in meeting original deadlines.                                                                                                                                | - [Implement Training Against Any Other Agent](https://github.com/bot-wheels/bot-wheels-core/issues/48)                                                                                                        |
+| **Dawid Mielewczyk**    | 5        | Provided technical support within the project, particularly with PPO implementations. Regular code reviews and configured Redis for one of the RL algorithm implementations.                                                                                             | - [Support for Rocket-Learn (Bots) and Redis Setup](https://github.com/bot-wheels/bot-wheels-core/issues/47)                                                                                                   |
+| **Camille Nadir**       | 3        | Delivered a basic list of key Rocket League game states. An additional assigned task involved providing a training metric measurement tool, but no activity was registered for this task as of 27.10.2024.                                                               | - [Prepare Bot Performance Metric Tool](https://github.com/bot-wheels/bot-wheels-core/issues/54) - [Prepare List of States and Priorities for Training](https://github.com/bot-wheels/bot-wheels-core/issues/38) |
+| **Michał Pryba**        | 5        | Implemented the A2C algorithm, allowing for adaptation to the final A3C version, and launched initial bot training sessions.                                                                                                                                             | - [Support for A2C/A3C Implementation](https://github.com/bot-wheels/bot-wheels-core/issues/51) - [Inital Implementation of the A3C Algorithm](https://github.com/bot-wheels/bot-wheels-core/issues/26)         |
+| **Wojciech Szamocki**   | 5        | Developed extensive in-game visualizations, including agent states, ball tracking, and additional views.                                                                                                                                                                 | - [Create a Visualisation](https://github.com/bot-wheels/bot-wheels-core/issues/44)                                                                                                                            |
+| **Konrad Siemiątkowski**| 4        | Unified GitHub Pages with current research documents and is currently working on implementing the A2C/A3C algorithm for training against another bot. Some delays were encountered in meeting initial objectives.                                                        | - [Implement A2C/A3C Training Against Another Bot](https://github.com/bot-wheels/bot-wheels-core/issues/53) - [Provide better file naming and add all unlinked files to mkdocs](https://github.com/bot-wheels/docs/issues/33)                                                                                                  |
+| **Michał Zarzycki**     | 5        | Established a basic bot training setup and an initial reward system using the PPO algorithm. Exploring the possibility of training against a local player.                                                                                                               | - [Implement PPO Training Against Human Players](https://github.com/bot-wheels/bot-wheels-core/issues/49) - [Test PPO Integration with the Game](https://github.com/bot-wheels/bot-wheels-core/issues/40)      |
+
+## 3. Challenges and Problems Encountered
+
+One primary challenge was task ambiguity, which will be addressed through clearer task descriptions. Task delivery delays from certain team members have occasionally slowed progress. Additionally, a need for training equipment, such as virtual machines and access to university resources, was identified.
+
+## 4. Plans for the Next Period (Weeks 5-6)
+
+Deliver refined RL algorithms that incorporate Rocket League-specific rewards. Visualization work will continue, with graphic adjustments and additional features as needed. A performance metric tool will be developed to meet project requirements and evaluate trained bots’ effectiveness.
+
+## 5. Summary
+
+Project progress is on track, with issues being addressed as they arise.
