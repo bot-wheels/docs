@@ -31,3 +31,7 @@ Follow these steps to install all necessary components.
 
 7. **Move `collision_meshes` to your bot's folder**.
 8. **Copy `example.py` from RLGym-PPO** and verify it works. You can find the `example.py` file [here](https://github.com/AechPro/rlgym-ppo/blob/main/example.py).
+
+## Step 3: Visualize Using RocketSimVis
+
+To visualize the simulation, you can use the RocketSimVis tool. Follow the instructions in the [RocketSimVis repository](https://github.com/ZealanL/RocketSimVis) to set it up.
