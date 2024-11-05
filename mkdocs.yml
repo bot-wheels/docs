@@ -31,6 +31,7 @@ nav:
     - Poetry Usage Tutorial: project-guide/poetry.md
     - Codebase Standardization Guidelines: project-guide/codebase-standardization-guidelines.md
     - Rocket Learn Setup: project-guide/rocket-learn setup/rocket-learn-setup.md
+    - RLGym PPO Setup: project-guide/rlgym_ppo.md
   - Research:
     - Interface Overlay Research: research/interface-overlay-research.md
     - Playing in Online Games: research/playing-in-online-games.md
