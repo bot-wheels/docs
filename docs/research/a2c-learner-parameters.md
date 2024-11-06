@@ -1,6 +1,6 @@
-## Parameters in A2C Learner Configuration
+# Parameters in A2C Learner Configuration
 
-### 1. `a2c_batch_size`
+## 1. `a2c_batch_size`
 
 - **New Value**: `5000`
 - **Why Changed**: Smaller batches mean the model updates more often and uses less memory.
@@ -19,7 +19,7 @@
 
 ---
 
-### 2. `ts_per_iteration`
+## 2. `ts_per_iteration`
 
 - **New Value**: `25000`
 - **Why Changed**: Fewer timesteps per iteration allow the model to update more frequently.
@@ -37,7 +37,7 @@
 
 ---
 
-### 3. `policy_lr` and `critic_lr`
+## 3. `policy_lr` and `critic_lr`
 
 - **New Values**:
   - **`policy_lr`**: `1e-3`
@@ -57,7 +57,7 @@
 
 ---
 
-### 4. `a2c_ent_coef`
+## 4. `a2c_ent_coef`
 
 - **New Value**: `0.01`
 - **Why Changed**: Increasing entropy helps the model explore more actions.
@@ -75,7 +75,7 @@
 
 ---
 
-### 5. `exp_buffer_size`
+## 5. `exp_buffer_size`
 
 - **New Value**: `50000`
 - **Why Changed**: Adjusting the experience buffer size ensures that enough experiences are stored for effective learning.
@@ -92,7 +92,7 @@
 
 ---
 
-### 6. `policy_layer_sizes` and `critic_layer_sizes`
+## 6. `policy_layer_sizes` and `critic_layer_sizes`
 
 - **New Values**:
   - **`policy_layer_sizes`**: `(256, 128)`
@@ -113,7 +113,7 @@
 
 ---
 
-### 7. `gae_lambda` and `gae_gamma`
+## 7. `gae_lambda` and `gae_gamma`
 
 - **New Values**:
   - **`gae_lambda`**: `0.95`
