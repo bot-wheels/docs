@@ -33,5 +33,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Deploy using mkdocs  
-        run: mkdocs gh-deploy --force --config-file docs/mkdocs.yml
+      - name: Deploy using mkdocs
+        run: |
+          cd docs
+          mkdocs gh-deploy --force
