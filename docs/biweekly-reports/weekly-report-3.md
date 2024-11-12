@@ -31,13 +31,13 @@ The overall engagement from the team has decreased in recent weeks. Currently, w
 | **Michał Zarzycki**     | 4.5     | Work on PPO. Delivered logs to Google Drive. Delivered sample bot game result - recording.                                                                                                                                                     | - [Task: Fix Issues in CustomObsBuilder Class](https://github.com/bot-wheels/bot-wheels-core/issues/64) -[Implement PPO Training Against Human Players](https://github.com/bot-wheels/bot-wheels-core/issues/49)                                                                                                                                                        |
 
 ## 3. Challenges and Problems Encountered
-- Communication issues with some team members
-- Reduced overall engagement compared to the project's start
-- Delays in delivering solutions
-- Some individuals are taking on significant responsibility for the team, generating a relatively large workload for them, but this helps move the project forward.
+
+There have been communication issues with some team members, along with reduced overall engagement compared to the project's start. This has led to delays in delivering solutions. Additionally, some individuals have taken on significant responsibility for the team, resulting in a relatively large workload for them, but this has helped move the project forward.
 
 ## 4. Plans for the Next Period (Weeks 7-8)
+
 In the next period, the goal is to deliver the CLI and a more effectively trained bot capable of consistently performing actions, such as scoring goals. The bot's performance will be evaluated based on predefined criteria leading to ensure it meets the expected outcomes. Initial measurements will be taken to compare the bot’s behavior against the assumptions made during the planning stages, providing a foundation for further refinement and adjustments.
 
 ## 5. Summary
+
 Improved self-motivation within the team is expected to lead to better coordination and more consistent progress. With increased individual drive, the team members will be more proactive in completing tasks and communicating effectively, which should help streamline the development process. This motivation is crucial for ensuring that everyone stays focused on their responsibilities and contributes to the overall success of the project.
