@@ -46,6 +46,7 @@ nav:
   - Biweekly Reports:
     - Week 1-2: biweekly-reports/weekly-report-1.md
     - Week 3-4: biweekly-reports/weekly-report-2.md
+    - Week 5-6: biweekly-reports/weekly-report-3.md
 
 plugins:
   - search
