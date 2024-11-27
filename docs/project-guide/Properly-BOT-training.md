@@ -11,7 +11,7 @@ The early stages of training refer to the period when your bot is not yet trying
 1. **Learning to touch the ball (TouchBallReward)**
 2. **Ensuring the bot doesn't forget how to jump (FlipReward)**
 
-### Why Do Bots Forget How to Jump?
+### Why Do Bots Forget How to Jump
 
 Controlling the car in the air is challenging and less forgiving compared to ground driving. A fresh bot tasked with reaching the ball often learns quickly to avoid jumping altogether. Unfortunately, this makes it harder for the bot to rediscover jumping later.
 
@@ -30,19 +30,18 @@ REWARD_FUNCTIONS = {
 
 > **Note:** Avoid rewards for scoring or moving the ball toward the goal at this stage. These add noise and slow down learning.
 
-#### Weights:
+#### Weights
 
 Try to increase the weights of touching the Ball first! After a few dozen million steps, your bot should frequently hit the ball.
 
-&#x20;  &#x20;
-
+&#x20;&#x20;
 ---
 
 ## Learning to Score
 
 Once your bot reliably hits the ball, introduce rewards for moving the ball toward the goal and scoring. Decrease the **TouchBallReward** significantly so it is no longer the bot's primary objective.
 
-### Recommended Rewards:
+### Recommended Rewards
 
 - **VelocityBallToGoalReward**: Use this for continuous encouragement to move the ball toward the goal.&#x20;
 
@@ -58,9 +57,9 @@ Avoid assigning excessive weight to goal rewards, such as:
           "weight": 100.0 
 ```
 
-#### Why?
+#### Why
 
-Massive goal rewards drown out other rewards, reducing exploration and slowing learning. Instead, use a reasonable weight (e.g., 20 or 10) for goal rewards. Note that a bot can be trained to high levels without goal rewards at all.
+Massive goal rewards drown out other rewards, reducing exploration and slowing learning. Instead, use a reasonable weight (e.g., 10 or 20) for goal rewards. Note that a bot can be trained to high levels without goal rewards at all.
 
 ---
 
@@ -70,7 +69,7 @@ Massive goal rewards drown out other rewards, reducing exploration and slowing l
 
 Once your bot can push the ball into the net, it enters the middle stages. This stage involves more complexity and refinement.
 
-### Objectives:
+### Objectives
 
 1. **Basic shots**
 2. **Basic saves**
@@ -111,7 +110,7 @@ Reward bots based on boost levels, emphasizing lower amounts:
 reward = sqrt(player.boost_amount)
 ```
 
-#### Tip:
+#### Tips
 
 - Increase the reward if the bot wastes boost.
 - Decrease it if the bot hoards boost unnecessarily.
