@@ -1,6 +1,6 @@
 # Guide how to train Rocket League Bot
 
-To start training the bot you have to run A2C.py file. Every reward is defined in rewards.py file. The weights and parameters of every single reward is defined in reward-config.json file. To run the visual simulation you have to enter RocketSimVis folder in your project and open RUN file. 
+To start training the bot you have to run A2C.py file. Every reward is defined in rewards.py file. The weights and parameters of every single reward is defined in reward-config.json file. To run the visual simulation you have to enter RocketSimVis folder in your project and open RUN file.
 
 ## Early Stages of Training (Bronze - Silver)
 
@@ -45,7 +45,7 @@ Once your bot reliably hits the ball, introduce rewards for moving the ball towa
 
 - **VelocityBallToGoalReward**: Use this for continuous encouragement to move the ball toward the goal.&#x20;
 
-#### Warning: Avoid Massive Goal Rewards
+#### Warning Avoid Massive Goal Rewards
 
 Avoid assigning excessive weight to goal rewards, such as:
 
