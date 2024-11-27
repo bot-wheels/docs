@@ -34,7 +34,6 @@ REWARD_FUNCTIONS = {
 
 Try to increase the weights of touching the Ball first! After a few dozen million steps, your bot should frequently hit the ball.
 
-&#x20;&#x20;
 ---
 
 ## Learning to Score
@@ -134,4 +133,3 @@ Introduce specific rewards for mechanics you want your bot to learn. For example
 ## Conclusion
 
 By following these steps, you can guide your bot from basic ball touches to advanced mechanics and competitive gameplay. Each stage builds on the previous one, ensuring steady and meaningful progress. Use the provided rewards and techniques as a foundation, and feel free to experiment to achieve the behavior you desire.
-
