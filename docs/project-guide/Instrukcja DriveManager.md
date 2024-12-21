@@ -3,6 +3,7 @@
 Poniższa instrukcja pokazuje, jak korzystać z klasy `GoogleDriveManager` do zarządzania plikami na Google Drive. Klasa ta umożliwia pobieranie, edytowanie oraz usuwanie plików w wybranym folderze Google Drive.
 
 ## 1. Inicjalizacja menedżera Google Drive
+
 Aby skorzystać z klasy, należy ją najpierw zainicjalizować, co spowoduje autoryzację dostępu do Google Drive:
 
 ```python
@@ -14,6 +15,7 @@ drive_manager = GoogleDriveManager()
 Podczas inicjalizacji klasa korzysta z plików `token.pickle` i `credentials.json`, aby uzyskać poświadczenia dostępu.
 
 ## 2. Pobieranie pliku z Google Drive
+
 Aby pobrać plik z Google Drive, można użyć metody `open_file()`, która zwraca zawartość pliku o podanej nazwie:
 
 ```python
@@ -28,6 +30,7 @@ else:
 Metoda ta sprawdza, czy plik o danej nazwie istnieje w folderze, a następnie pobiera jego zawartość.
 
 ## 3. Przesyłanie pliku do Google Drive
+
 Aby przesłać plik do Google Drive, możemy użyć metody `upload_file()`. Jeśli plik o tej samej nazwie już istnieje, zostanie zaktualizowany:
 
 ```python
@@ -41,6 +44,7 @@ drive_manager.upload_file(file_name, file_data, mime_type)
 Jeśli plik już istnieje, jego zawartość zostanie zaktualizowana; w przeciwnym wypadku zostanie utworzony nowy plik.
 
 ## 4. Tworzenie nowego pliku
+
 Aby utworzyć nowy plik w Google Drive, możemy użyć metody `create_file()`, która działa podobnie do `upload_file()`:
 
 ```python
@@ -50,6 +54,7 @@ drive_manager.create_file(file_name, file_data, mime_type)
 Ta metoda zawsze tworzy nowy plik o podanej nazwie.
 
 ## 5. Wyświetlanie listy plików
+
 Aby wyświetlić listę plików w folderze Google Drive, możemy użyć metody `list_files()`:
 
 ```python
@@ -61,6 +66,7 @@ for file in files:
 Metoda ta zwraca listę plików wraz z ich nazwami i identyfikatorami.
 
 ## 6. Usuwanie pliku
+
 Aby usunąć plik z Google Drive, należy najpierw uzyskać jego identyfikator za pomocą metody `get_file_id()`, a następnie skorzystać z metody `delete_file()`:
 
 ```python
@@ -73,6 +79,7 @@ else:
 ```
 
 ## 7. Przykładowe użycie
+
 W celu zobrazowania możliwości klasy `GoogleDriveManager`, poniżej znajduje się przykładowy kod, który sprawdza istnienie pliku, pobiera go, edytuje, a następnie przesyła z powrotem na Google Drive:
 
 ```python
@@ -100,4 +107,3 @@ else:
     csv_content = dane.to_csv_string().encode('utf-8')
     drive_manager.create_file(file_name, csv_content, 'text/csv')
 ```
-
