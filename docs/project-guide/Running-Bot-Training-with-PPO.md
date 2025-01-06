@@ -15,7 +15,7 @@ This documentation provides clear instructions on how to run bot training using 
   - gym.spaces
   - numpy
   - pathlib
-- The bot relies on a custom GoogleDriveManager (from utils.drive_manager import GoogleDriveManager).  
+- The bot relies on a custom [`GoogleDriveManager`](https://github.com/bot-wheels/bot-wheels-core/blob/main/src/utils/drive_manager.py) (from `utils.drive_manager` import `GoogleDriveManager`).  
   - A credentials.json file is required, containing secrets to connect to Google Drive.  
   - Users who want to run the script must share their email to gain access.  
   - For inquiries related to Google Drive, contact @Assassin-PL.
@@ -26,7 +26,7 @@ This documentation provides clear instructions on how to run bot training using 
    Make sure you have all required libraries installed. A virtual environment (e.g., venv or conda) is highly recommended to keep dependencies organized.
 
 2. **Create the Agent Instance**  
-   Instantiate the `SimpleAgent` class. This agent automatically loads any previously trained model if one is found:
+   Instantiate the [`SimpleAgent`](https://github.com/bot-wheels/bot-wheels-core/blob/main/src/training/agent.py) class. This agent automatically loads any previously trained model if one is found:
 
    ```python
    from agent import SimpleAgent
@@ -36,10 +36,10 @@ This documentation provides clear instructions on how to run bot training using 
    ```
 
 3. **Configure Bot Settings**  
-   In the `setting.cfg` file, adjust the bot's parameters to define how the training loop behaves. For example, you can modify episode lengths, reward function details, or specific environment constants. Any change here affects how the bot explores and learns within the PPO framework.
+   In the [`settings.cfg`](https://github.com/bot-wheels/bot-wheels-core/blob/main/src/settings.cfg) file, adjust the bot's parameters to define how the training loop behaves. For example, you can modify episode lengths, reward function details, or specific environment constants. Any change here affects how the bot explores and learns within the PPO framework.
 
 4. **Initiate Training**  
-   After configuring your environment and creating the `SimpleAgent` instance, start the training loop by calling:
+   After configuring your environment and creating the [`SimpleAgent`](https://github.com/bot-wheels/bot-wheels-core/blob/main/src/training/agent.py#L325) instance, start the training loop by calling:
 
    ```python
    agent.train()
@@ -49,20 +49,20 @@ This documentation provides clear instructions on how to run bot training using 
 
 ## Training Execution
 
-When you call `agent.train()`, the following actions occur:
+When you call [`agent.train()`](https://github.com/bot-wheels/bot-wheels-core/blob/main/src/training/agent.py#L325), the following actions occur:
 
-- The bot environment (defined via `rlgym` and your configuration) initializes using the `make_env()` method. It's important to note that PPO requires a specific environment setup; the `make_env()` method cannot create a training environment if, for example, the bot was previously trained to play against another bot or in a training loop reacting to human input.
+- The bot environment (defined via `rlgym` and your configuration) initializes using the [`make_env()`](https://github.com/bot-wheels/bot-wheels-core/blob/main/src/training/agent.py#L390) method. It's important to note that PPO requires a specific environment setup; the [`make_env()`](https://github.com/bot-wheels/bot-wheels-core/blob/main/src/training/agent.py#L390) method cannot create a training environment if, for example, the bot was previously trained to play against another bot or in a training loop reacting to human input.
 - The previously trained model (if available) is loaded to continue its training.
 - Data (observations, rewards, etc.) is continuously collected, and the agent updates its policy using PPO.
 - Periodically or upon completion, the agent saves checkpoints of the model.
 
 **Configuration Note:**
 
-Ensure that the `make_env()` function correctly returns the environment (`env`). All accessible variables and parameters for configuring the training loop are located in the `settings.cfg` file. Only make changes within this file to alter training configurations, as everything else has been preconfigured.
+Ensure that the [`make_env()`](https://github.com/bot-wheels/bot-wheels-core/blob/main/src/training/agent.py#L390) function correctly returns the environment (`env`). All accessible variables and parameters for configuring the training loop are located in the [`settings.cfg`](https://github.com/bot-wheels/bot-wheels-core/blob/main/src/settings.cfg) file. Only make changes within this file to alter training configurations, as everything else has been preconfigured.
 
 ## Parameters and Their Effects
 
-In the `setting.cfg` file and within your code, you can adjust various parameters. Key parameters include:
+In the [`settings.cfg`](https://github.com/bot-wheels/bot-wheels-core/blob/main/src/settings.cfg) file and within your code, you can adjust various parameters. Key parameters include:
 
 - **realtime**: Boolean (`true`/`false`) that determines whether to run training in accelerated mode. Setting to `true` causes game time to be sped up (e.g., 1 second of real time corresponds to 1000 seconds in the game).
 
@@ -73,6 +73,14 @@ In the `setting.cfg` file and within your code, you can adjust various parameter
 - **human**: Boolean that specifies whether the bot is being trained to play against a human player. Setting this to `true` enables training scenarios where the bot competes against human input, enhancing its adaptability.
 
 Tweaking these parameters can lead to different training outcomes in terms of speed, stability, and bot performance.
+
+### Match Configuration
+
+Based on project assumptions, only the possibility to play in **1 vs 1** matches is enabled by default. This is configured by setting the match settings in the environment file to **1 vs 1**.
+
+However, if you wish to enable games with more than **1 vs 1**, you can adjust the match settings accordingly. This allows for more complex training scenarios involving multiple agents. For detailed instructions on configuring multiple agents, refer to the [Multiple Agents](https://rlgym.org/docs-page.html#tutorials) section in the rlgym documentation.
+
+<!-- Wstawic tutaj opis uruchamiania wizualizacji -->
 
 ## Additional Information
 
