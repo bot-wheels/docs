@@ -84,7 +84,7 @@ This process involves retrieving the unique identifier of the desired file, whic
 
 ## 7. Example Usage
 
-To demonstrate the capabilities of the [`GoogleDriveManager`](https://github.com/bot-wheels/bot-wheels-core/blob/main/src/utils/drive_manager.py) class, the following example showcases how to check for the existence of a file, download it, edit its contents, and then upload it back to Google Drive:
+To demonstrate the capabilities of the [`GoogleDriveManager`](https://github.com/bot-wheels/bot-wheels-core/blob/main/src/utils/drive_manager.py) class, also you should download [`data_generator`](https://pypi.org/project/Data-Generator/) for this example only, the following example showcases how to check for the existence of a file, download it, edit its contents, and then upload it back to Google Drive:
 
 ```python
 from utils.drive_manager import GoogleDriveManager
