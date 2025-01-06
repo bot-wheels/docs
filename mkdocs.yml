@@ -33,6 +33,7 @@ nav:
     - Rocket Learn Setup: project-guide/rocket-learn-setup/rocket-learn-setup.md
     - Rl-Gym-PPO Setup: project-guide/rlgym_ppo.md
     - Google Drive Manager Tutorial: project-guide/google-drive-manager.md
+    - Bot Training with PPO: project-guide/Running-Bot-Training-with-PPO.md
   - Research:
     - Interface Overlay Research: research/interface-overlay-research.md
     - Playing in Online Games: research/playing-in-online-games.md
@@ -40,6 +41,7 @@ nav:
     - Implement Movement Testing Script for Bot Actions: research/implement-movement-testing-script-for-bot-actions.md
     - Match Against AI Bots: research/match-against-ai-bots.md
     - Research and Documentation of Algorithm Categories for Rocket League Bot: research/research-and-documentation-of-algorithm-categories-for-rocket-league-bot.md
+    - Research about different reward functions: research/research-about-different-reward-functions.md
     - RL algorithms:
       - A3C: research/rl-algorithms/A3C.md
       - Model based algorithms for RL bots alphazero: research/rl-algorithms/model-based-algorithms-for-rocket-league-bots-alphazero.md
@@ -48,6 +50,8 @@ nav:
     - Week 1-2: biweekly-reports/weekly-report-1.md
     - Week 3-4: biweekly-reports/weekly-report-2.md
     - Week 5-6: biweekly-reports/weekly-report-3.md
+    - Week 7-8: biweekly-reports/weekly-report-4.md
+    - Week 9-11: biweekly-reports/weekly-report-5.md
 
 plugins:
   - search
