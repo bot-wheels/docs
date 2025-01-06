@@ -32,6 +32,7 @@ nav:
     - Codebase Standardization Guidelines: project-guide/codebase-standardization-guidelines.md
     - Rocket Learn Setup: project-guide/rocket-learn-setup/rocket-learn-setup.md
     - Rl-Gym-PPO Setup: project-guide/rlgym_ppo.md
+    - Google Drive Manager Tutorial: project-guide/google-drive-manager.md
     - Bot Training with PPO: project-guide/Running-Bot-Training-with-PPO.md
   - Research:
     - Interface Overlay Research: research/interface-overlay-research.md
