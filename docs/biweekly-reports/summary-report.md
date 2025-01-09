@@ -6,8 +6,6 @@
 
 **Date**: January 8, 2025
 
----
-
 ## 1. Progress Overview
 
 ### Project Objectives
@@ -25,7 +23,7 @@ The main objectives are:
 - **Optimize the bot's performance**  
   The bot is being optimized to run at 30 FPS on a system with an Intel i9-14900HX CPU and RTX 4080 GPU.
 
-- **Develop visualizations** 
+- **Develop visualizations**  
   Visualizations of the bot's states and actions are being developed to improve decision-making and performance analysis.
 
 The approaches based on A2C and PPO algorithms were implemented, but the lack of a test environment prevented full testing. As a result, it is not possible to conclude whether the bots would have achieved the target of 50% win rate. On the positive side, the bots run stably at over 30 FPS, which meets the objective. Visualizations were delivered as planned.
