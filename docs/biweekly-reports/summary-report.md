@@ -28,8 +28,6 @@ The main objectives are:
 - **Develop visualizations** 
   Visualizations of the bot's states and actions are being developed to improve decision-making and performance analysis.
 
-*Note: Add details on what was achieved and what was not here.*
-
 The approaches based on A2C and PPO algorithms were implemented, but the lack of a test environment prevented full testing. As a result, it is not possible to conclude whether the bots would have achieved the target of 50% win rate. On the positive side, the bots run stably at over 30 FPS, which meets the objective. Visualizations were delivered as planned.
 
 ---
