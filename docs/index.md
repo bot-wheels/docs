@@ -58,3 +58,18 @@ The goal of the project is to create a bot for the game Rocket League, which wil
 * Michał Zarzycki
 * Igor Malkovsky
 * Wojtek Szamocki
+
+## Used tools
+
+* Python 3.9.13 - Used programming language
+* RLGym - Open-sourced Python API for Reinforcement Learning Environments
+* RLBot - Create and share Rocket League bots for offline play
+* Ruff - Linter
+* rocket-learn/Redis - attempt to implement
+
+## Summary of the Project
+
+The implementation of **PPO** and **A2C** algorithms was completed. However, the absence of a functional test environment hindered the ability to verify the bot's performance against the target win rate of 50%. Despite this, the bot achieved a stable runtime of over 30 **FPS**, meeting a critical technical requirement. Visualizations were successfully delivered as planned. A significant issue arose due to the release of a new version of a key library just days before the project deadline. This incompatibility with the existing setup resulted in the project's failure to operate as intended.
+Team performance varied significantly, with delays in task completion and insufficient communication of progress from some members. These factors, coupled with over-reliance on individual accountability, contributed to the project's shortcomings. Out of the three planned algorithm implementations, two were completed, but none of the trained models met the target objectives due to insufficient training time.
+The project failed to achieve its primary objectives. Limited contributions from certain team members, especially near the project's conclusion, had a severe impact. The team's dynamics revealed a division between committed contributors and those who disengaged. The lack of full engagement prevented the team from meeting the intended goals, despite partial progress in algorithm development and achieving stable bot performance.
+Estimated completion of approximately 65% of the intended goal.
