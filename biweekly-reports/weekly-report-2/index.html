@@ -1,0 +1,1234 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../weekly-report-1/">
+      
+      
+        <link rel="next" href="../weekly-report-3/">
+      
+      
+      <link rel="icon" href="../../assets/3d-car.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Week 3-4 - Bot-Wheels</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#biweekly-report-for-the-bot-project" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Bot-Wheels" class="md-header__button md-logo" aria-label="Bot-Wheels" data-md-component="logo">
+      
+  <img src="../../assets/3d-car.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Bot-Wheels
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Week 3-4
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/bot-wheels" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    bot-wheels
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Bot-Wheels" class="md-nav__button md-logo" aria-label="Bot-Wheels" data-md-component="logo">
+      
+  <img src="../../assets/3d-car.png" alt="logo">
+
+    </a>
+    Bot-Wheels
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/bot-wheels" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    bot-wheels
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Project Guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Project Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project-guide/working-with-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Working With Project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project-guide/poetry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Poetry Usage Tutorial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project-guide/codebase-standardization-guidelines/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Codebase Standardization Guidelines
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project-guide/rocket-learn-setup/rocket-learn-setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rocket Learn Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project-guide/rlgym_ppo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rl-Gym-PPO Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project-guide/google-drive-manager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Google Drive Manager Tutorial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project-guide/Running-Bot-Training-with-PPO/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bot Training with PPO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Research
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Research
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/interface-overlay-research.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interface Overlay Research
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/playing-in-online-games/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Playing in Online Games
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/rocket-league-bot-setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rocket League Bot Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/implement-movement-testing-script-for-bot-actions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Implement Movement Testing Script for Bot Actions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/match-against-ai-bots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Match Against AI Bots
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/research-and-documentation-of-algorithm-categories-for-rocket-league-bot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Research and Documentation of Algorithm Categories for Rocket League Bot
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/research-about-different-reward-functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Research about different reward functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    RL algorithms
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            RL algorithms
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/rl-algorithms/A3C/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    A3C
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/rl-algorithms/model-based-algorithms-for-rocket-league-bots-alphazero/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Model based algorithms for RL bots alphazero
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/rl-algorithms/police-optimization-documentation-summer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Police Optimization Documentation from the summer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Biweekly Reports
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Biweekly Reports
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../weekly-report-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Week 1-2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Week 3-4
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Week 3-4
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-progress-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Progress Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-team-member-contributions-marks-and-linked-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Team Member Contributions, Marks, and Linked Issues
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-challenges-and-problems-encountered" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Challenges and Problems Encountered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-plans-for-the-next-period-weeks-5-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Plans for the Next Period (Weeks 5-6)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../weekly-report-3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Week 5-6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../weekly-report-4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Week 7-8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../weekly-report-5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Week 9-11
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../summary-report/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Summary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-progress-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Progress Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-team-member-contributions-marks-and-linked-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Team Member Contributions, Marks, and Linked Issues
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-challenges-and-problems-encountered" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Challenges and Problems Encountered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-plans-for-the-next-period-weeks-5-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Plans for the Next Period (Weeks 5-6)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="biweekly-report-for-the-bot-project">Biweekly Report for the Bot Project</h1>
+<p><strong>Subject</strong>: Initial Implementation of RL Algorithms and Addition of Fundamental Visualizations</p>
+<p><strong>Project Title</strong>: BotWheels</p>
+<p><strong>Report Number</strong>: 2</p>
+<p><strong>Date</strong>: October 27, 2024</p>
+<p><strong>Week Range</strong>: Weeks 3-4</p>
+<h2 id="1-progress-overview">1. Progress Overview</h2>
+<p>Significant progress has been made with the development of base PPO and A2C/A3C algorithms, which are already yielding training results. Extensive state visualizations have been implemented with further expansions possible. Weekly goals are largely being met, with some even ahead of schedule, supporting a favorable outlook for project completion. A team member has proposed Rocket Learn, a tool from the RLGym community that facilitates advanced bot training. This tool has been assigned for parallel development as a potential approach.</p>
+<h2 id="2-team-member-contributions-marks-and-linked-issues">2. Team Member Contributions, Marks, and Linked Issues</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Team Member</strong></th>
+<th><strong>Mark</strong></th>
+<th><strong>Summary of Contributions</strong></th>
+<th><strong>Linked Issues</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Jakub Cisoń</strong></td>
+<td>4.5</td>
+<td>Organized team work, adapted tasks based on feedback from project members, conducted code reviews. Occasionally experienced minor delays in delivering new tasks. Maintained communication with the Rocket League bot community to improve project work.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Kacper Drozdowski</strong></td>
+<td>3.5</td>
+<td>Conducted research on the A2C algorithm and implemented it for testing against a local player (delayed, scheduled for completion by 28.10.2024 with validation in the next report).</td>
+<td>- <a href="https://github.com/bot-wheels/bot-wheels-core/issues/41">Research about A2C algorithm and how we can tranform that info A3C approche</a> - <a href="https://github.com/bot-wheels/bot-wheels-core/issues/52">Implement A2C/A3C Training Against Human Players</a></td>
+</tr>
+<tr>
+<td><strong>Mateusz Gościniecki</strong></td>
+<td>5</td>
+<td>Developed the main training loop for the PPO algorithm and assessed the feasibility of using Rocket Learn to achieve better results for bots. Ultimately responsible for the parallel implementation of the algorithm using Rocket Learn.</td>
+<td>- <a href="https://github.com/bot-wheels/bot-wheels-core/issues/56">Rocket Learn: Creating a Basic Training Loop vs Bot</a></td>
+</tr>
+<tr>
+<td><strong>Anna Ivanytska</strong></td>
+<td>3.5</td>
+<td>Delivered delayed research on the DQN algorithm and began implementing an event logger visualization.</td>
+<td>- <a href="https://github.com/bot-wheels/bot-wheels-core/issues/50">Create Event Log Window</a> - <a href="https://github.com/bot-wheels/docs/issues/19">Documentation for the DQN Algorithm</a></td>
+</tr>
+<tr>
+<td><strong>Igor Malkovskiy</strong></td>
+<td>4</td>
+<td>Delivered the PPO algorithm against another agent and conducted relevant research. Some delays encountered in meeting original deadlines.</td>
+<td>- <a href="https://github.com/bot-wheels/bot-wheels-core/issues/48">Implement Training Against Any Other Agent</a></td>
+</tr>
+<tr>
+<td><strong>Dawid Mielewczyk</strong></td>
+<td>5</td>
+<td>Provided technical support within the project, particularly with PPO implementations. Regular code reviews and configured Redis for one of the RL algorithm implementations.</td>
+<td>- <a href="https://github.com/bot-wheels/bot-wheels-core/issues/47">Support for Rocket-Learn (Bots) and Redis Setup</a></td>
+</tr>
+<tr>
+<td><strong>Camille Nadir</strong></td>
+<td>3</td>
+<td>Delivered a basic list of key Rocket League game states. An additional assigned task involved providing a training metric measurement tool, but no activity was registered for this task as of 27.10.2024.</td>
+<td>- <a href="https://github.com/bot-wheels/bot-wheels-core/issues/54">Prepare Bot Performance Metric Tool</a> - <a href="https://github.com/bot-wheels/bot-wheels-core/issues/38">Prepare List of States and Priorities for Training</a></td>
+</tr>
+<tr>
+<td><strong>Michał Pryba</strong></td>
+<td>5</td>
+<td>Implemented the A2C algorithm, allowing for adaptation to the final A3C version, and launched initial bot training sessions.</td>
+<td>- <a href="https://github.com/bot-wheels/bot-wheels-core/issues/51">Support for A2C/A3C Implementation</a> - <a href="https://github.com/bot-wheels/bot-wheels-core/issues/26">Inital Implementation of the A3C Algorithm</a></td>
+</tr>
+<tr>
+<td><strong>Wojciech Szamocki</strong></td>
+<td>5</td>
+<td>Developed extensive in-game visualizations, including agent states, ball tracking, and additional views.</td>
+<td>- <a href="https://github.com/bot-wheels/bot-wheels-core/issues/44">Create a Visualisation</a></td>
+</tr>
+<tr>
+<td><strong>Konrad Siemiątkowski</strong></td>
+<td>4</td>
+<td>Unified GitHub Pages with current research documents and is currently working on implementing the A2C/A3C algorithm for training against another bot. Some delays were encountered in meeting initial objectives.</td>
+<td>- <a href="https://github.com/bot-wheels/bot-wheels-core/issues/53">Implement A2C/A3C Training Against Another Bot</a> - <a href="https://github.com/bot-wheels/docs/issues/33">Provide better file naming and add all unlinked files to mkdocs</a></td>
+</tr>
+<tr>
+<td><strong>Michał Zarzycki</strong></td>
+<td>5</td>
+<td>Established a basic bot training setup and an initial reward system using the PPO algorithm. Exploring the possibility of training against a local player.</td>
+<td>- <a href="https://github.com/bot-wheels/bot-wheels-core/issues/49">Implement PPO Training Against Human Players</a> - <a href="https://github.com/bot-wheels/bot-wheels-core/issues/40">Test PPO Integration with the Game</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-challenges-and-problems-encountered">3. Challenges and Problems Encountered</h2>
+<p>One primary challenge was task ambiguity, which will be addressed through clearer task descriptions. Task delivery delays from certain team members have occasionally slowed progress. Additionally, a need for training equipment, such as virtual machines and access to university resources, was identified.</p>
+<h2 id="4-plans-for-the-next-period-weeks-5-6">4. Plans for the Next Period (Weeks 5-6)</h2>
+<p>Deliver refined RL algorithms that incorporate Rocket League-specific rewards. Visualization work will continue, with graphic adjustments and additional features as needed. A performance metric tool will be developed to meet project requirements and evaluate trained bots’ effectiveness.</p>
+<h2 id="5-summary">5. Summary</h2>
+<p>Project progress is on track, with issues being addressed as they arise.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/bot-wheels" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>
