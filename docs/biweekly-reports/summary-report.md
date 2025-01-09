@@ -50,7 +50,7 @@ The approaches based on A2C and PPO algorithms were implemented, but the lack of
 
 ## 3. Challenges and Problems Encountered
 
-A new version of a key library was released just a few days before the project deadline, which caused significant issues as the current setup could not run with the new version. Consequently, the project is not functioning as expected at this time. 
+A new version of a key library was released just a few days before the project deadline, which caused significant issues as the current setup could not run with the new version. Consequently, the project is not functioning as expected at this time.  
 
 Overall, the project was hindered by delays in task completion by individual team members. A major contributing factor was a lack of communication regarding problems, despite repeated requests to update progress. A key mistake in management was placing too much trust in human factors.
 
@@ -60,4 +60,4 @@ Out of the three planned algorithm implementations, two were completed, but none
 
 ## 4. Summary
 
-The project did not meet the planned objectives. The lack of contribution from certain team members, particularly toward the end, and the failure to deliver key metrics hampered progress. The team dynamics clearly divided into two groups: those who were committed and engaged with the project, and those who abandoned it close to the deadline. The latter group severely impacted the project's success. 
+The project did not meet the planned objectives. The lack of contribution from certain team members, particularly toward the end, and the failure to deliver key metrics hampered progress. The team dynamics clearly divided into two groups: those who were committed and engaged with the project, and those who abandoned it close to the deadline. The latter group severely impacted the project's success.  
